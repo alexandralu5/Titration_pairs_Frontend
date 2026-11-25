@@ -1,0 +1,36 @@
+.formScreen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.formHeader {
+  padding: calc(12px + env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left));
+  background: #fff;
+  color: var(--bg-dark);
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.formHeader h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.formBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  width: min(100%, 460px);
+  margin: 0 auto;
+  padding-bottom: calc(var(--nav-height) + 14px);
+  font-size: 0.9rem;
+}
+
+.formButton {
+  width: 100%;
+  background: var(--primary);
+  border: none;
+  font-weight: bold;
+}
